@@ -23,6 +23,11 @@ class Teacher {
 }
 
 class infoPrinter {
+    factory infoPrinter.create() {
+        return infoPrinter._();
+    }
+infoPrinter._();
+
     void printInfo() {
         var student = Student();
         ..name = "Inosuke Hashibira"
@@ -42,6 +47,6 @@ class infoPrinter {
     }
 
     void main() {
-        var infoPrinter = infoPrinter();
+        var infoPrinter = infoPrinter.create();
         infoPrinter.printInfo();
     }
