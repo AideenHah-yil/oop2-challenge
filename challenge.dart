@@ -1,7 +1,7 @@
 class Student {
-    String name,
-    int age,
-    int gradeLevel,
+    String name = "";
+    int age = 0;
+    int gradeLevel = 0;
 
 void studentInfo() {
     print("Name: $name");
@@ -11,9 +11,9 @@ void studentInfo() {
 }
 
 class Teacher {
-    String name,
-    int age,
-    String subject,
+    String name = "";
+    int age = 0;
+    String subject = "";
 
     void teacherInfo() {
         print("Name: $name");
@@ -22,9 +22,9 @@ class Teacher {
     }
 }
 
-class infoPrinter {
-    factory infoPrinter.create() {
-        return infoPrinter._();
+class InfoPrinter {
+    factory InfoPrinter.create() {
+        return InfoPrinter._();
     }
 infoPrinter._();
 
@@ -47,6 +47,6 @@ infoPrinter._();
     }
 
     void main() {
-        var infoPrinter = infoPrinter.create();
+        var InfoPrinter = InfoPrinter.create();
         infoPrinter.printInfo();
     }
